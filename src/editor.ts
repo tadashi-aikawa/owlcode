@@ -4,11 +4,22 @@ import * as vscode from 'vscode'
 export const getActiveLineText = (editor: vscode.TextEditor): string =>
     editor.document.lineAt(editor.selection.active.line).text
 
+export const getSelectionText = (editor: vscode.TextEditor): string =>
+    editor.document.getText(editor.selection)
+
 export const replaceActiveLine = async (editor: vscode.TextEditor, str: string): Promise<{}> =>
     await new Promise((resolve, reject) => {
         editor.edit(editBuilder => {
             const activeLine = editor.document.lineAt(editor.selection.active.line).range
             editBuilder.replace(activeLine, str)
+            resolve()
+        })
+    })
+
+export const replaceSelection = async (editor: vscode.TextEditor, str: string): Promise<{}> =>
+    await new Promise((resolve, reject) => {
+        editor.edit(editBuilder => {
+            editBuilder.replace(editor.selection, str)
             resolve()
         })
     })
