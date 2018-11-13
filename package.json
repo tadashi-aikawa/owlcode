@@ -7,13 +7,14 @@
     "engines": {
         "vscode": "^1.28.0"
     },
+    "repository": {
+        "url": "https://github.com/tadashi-aikawa/owlcode"
+    },
     "categories": [
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.headerLV1",
-        "onCommand:extension.headerLV2",
-        "onCommand:extension.dropbox.transform_raw_uri"
+        "*"
     ],
     "main": "./out/extension",
     "contributes": {
@@ -29,6 +30,16 @@
             {
                 "command": "extension.dropbox.transform_raw_uri",
                 "title": "Transform to raw URI in dropbox"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "extension.headerLV1",
+                "key": "alt+shift+-"
+            },
+            {
+                "command": "extension.headerLV2",
+                "key": "alt+-"
             }
         ]
     },
