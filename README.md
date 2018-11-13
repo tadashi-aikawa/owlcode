@@ -1,14 +1,17 @@
 # owlcode
 
-## Install
-
-Windows
+## Install (Windows)
 
 ```
-$ git clone https://github.com/tadashi-aikawa/owlcode.git %HOMEPATH%\.vscode\extensions\owlcode
-$ cd %HOMEPATH%\.vscode\extensions\owlcode
-$ npm i
-$ npm run compile
+$ curl "https://raw.githubusercontent.com/tadashi-aikawa/owlcode/master/install.bat" -o install.bat
+$ install.bat
+```
+
+## Update (Windows)
+
+```
+$ curl "https://raw.githubusercontent.com/tadashi-aikawa/owlcode/master/update.bat" -o update.bat
+$ update.bat
 ```
 
 ## Features
