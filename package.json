@@ -12,7 +12,8 @@
     ],
     "activationEvents": [
         "onCommand:extension.headerLV1",
-        "onCommand:extension.headerLV2"
+        "onCommand:extension.headerLV2",
+        "onCommand:extension.dropbox.transform_raw_uri"
     ],
     "main": "./out/extension",
     "contributes": {
@@ -24,6 +25,10 @@
             {
                 "command": "extension.headerLV2",
                 "title": "Add header LV2"
+            },
+            {
+                "command": "extension.dropbox.transform_raw_uri",
+                "title": "Transform to raw URI in dropbox"
             }
         ]
     },
