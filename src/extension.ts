@@ -1,6 +1,6 @@
 'use strict'
 import * as vscode from 'vscode'
-import { replaceActiveLine, insertNextLine, getActiveLineText, getSelectionText, replaceSelection } from './editor'
+import { insertNextLine, getActiveLineText, getSelectionText, replaceSelection } from './editor'
 
 // Shift_JIS: 0x0 ～ 0x80, 0xa0 , 0xa1 ～ 0xdf , 0xfd ～ 0xff
 // Unicode : 0x0 ～ 0x80, 0xf8f0, 0xff61 ～ 0xff9f, 0xf8f1 ～ 0xf8f3
