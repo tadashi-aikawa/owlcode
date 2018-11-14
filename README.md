@@ -1,5 +1,7 @@
 # owlcode
 
+![demo](./demo.gif)
+
 ## Install (Windows)
 
 ```
