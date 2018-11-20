@@ -13,6 +13,23 @@ const countLength = (str: string): number => str.split('')
         .map(x => getBytes(x.codePointAt(0)))
         .reduce((x, y) => x + y)
 
+function encodeSelection() {
+    const editor = vscode.window.activeTextEditor
+    if (!editor) {
+        return
+    }
+
+    replaceSelection(editor, encodeURI(getSelectionText(editor)))
+}
+
+function decodeSelection() {
+    const editor = vscode.window.activeTextEditor
+    if (!editor) {
+        return
+    }
+
+    replaceSelection(editor, decodeURI(getSelectionText(editor)))
+}
 
 function setHeader(symbol: string) {
     const editor = vscode.window.activeTextEditor
@@ -43,6 +60,8 @@ export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(
         register('extension.headerLV1', async () => await setHeader("=")),
         register('extension.headerLV2', async () => await setHeader("-")),
+        register('extension.encodeSelection', async () => await encodeSelection()),
+        register('extension.decodeSelection', async () => await decodeSelection()),
         register('extension.dropbox.transform_raw_uri', async () => await transform2DropboxRowURI()),
     )
 }

@@ -28,6 +28,14 @@
                 "title": "Add header LV2"
             },
             {
+                "command": "extension.encodeSelection",
+                "title": "Encode selection (Percent encoding)"
+            },
+            {
+                "command": "extension.decodeSelection",
+                "title": "Decode selection (Percent encoding)"
+            },
+            {
                 "command": "extension.dropbox.transform_raw_uri",
                 "title": "Transform to raw URI in dropbox"
             }
