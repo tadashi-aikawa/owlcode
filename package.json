@@ -21,27 +21,27 @@
         "commands": [
             {
                 "command": "extension.headerLV1",
-                "title": "Add header LV1"
+                "title": "OwlCode: Add header LV1"
             },
             {
                 "command": "extension.headerLV2",
-                "title": "Add header LV2"
+                "title": "OwlCode: Add header LV2"
             },
             {
                 "command": "extension.encodeSelection",
-                "title": "Encode selection (Percent encoding)"
+                "title": "OwlCode: Encode selection (Percent encoding)"
             },
             {
                 "command": "extension.decodeSelection",
-                "title": "Decode selection (Percent encoding)"
+                "title": "OwlCode: Decode selection (Percent encoding)"
             },
             {
                 "command": "extension.dropbox.transform_raw_uri",
-                "title": "Transform to raw URI in dropbox"
+                "title": "OwlCode: Transform to raw URI in dropbox"
             },
             {
                 "command": "extension.transform_to_snippet",
-                "title": "Transformt to snippet"
+                "title": "OwlCode: Transformt to snippet"
             }
         ],
         "keybindings": [
