@@ -38,6 +38,10 @@
             {
                 "command": "extension.dropbox.transform_raw_uri",
                 "title": "Transform to raw URI in dropbox"
+            },
+            {
+                "command": "extension.transform_to_snippet",
+                "title": "Transformt to snippet"
             }
         ],
         "keybindings": [
